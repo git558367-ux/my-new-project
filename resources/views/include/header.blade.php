@@ -1,4 +1,64 @@
-  <header id="header" class="header fixed-top">
+ <style>
+
+/* ================= HEADER DARK ================= */
+
+/* Navbar Background */
+header,
+.navbar,
+.main-header {
+    background: #0f172a !important;
+    border-bottom: 1px solid #1e293b;
+}
+
+/* Logo Text */
+.navbar-brand {
+    color: #f8fafc !important;
+    font-weight: 700;
+}
+
+/* Nav Links */
+.navbar-nav .nav-link {
+    color: #cbd5e1 !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #60a5fa !important;
+}
+
+/* Active Link */
+.navbar-nav .nav-link.active {
+    color: #3b82f6 !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background: #1e293b !important;
+    border: 1px solid #334155;
+}
+
+.dropdown-item {
+    color: #cbd5e1 !important;
+}
+
+.dropdown-item:hover {
+    background: #334155 !important;
+    color: #fff !important;
+}
+
+/* Navbar Toggle (Mobile) */
+.navbar-toggler {
+    border: 1px solid #334155;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+</style>
+ <header id="header" class="header fixed-top">
 
       <div class="branding d-flex align-items-cente">
 

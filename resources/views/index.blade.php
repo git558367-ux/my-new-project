@@ -3,6 +3,148 @@
 @section('title', 'index Page')
 
 @section('main')
+<style>
+
+/* Global Dark Background */
+body {
+    background: #0f172a !important;
+    color: #e2e8f0 !important;
+}
+
+/* Section Background Dark */
+.section {
+    background: #0f172a !important;
+}
+
+/* Light Background Sections Override */
+.light-background {
+    background: #111827 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #f8fafc !important;
+}
+
+/* Paragraph */
+p {
+    color: #cbd5e1 !important;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+}
+
+/* Highlight Text */
+.highlight {
+    color: #60a5fa !important;
+}
+
+/* Cards Dark */
+.specialty-card,
+.department-highlight,
+.doctor-profile,
+.featured-service-main,
+.feature-block,
+.search-section,
+.emergency-banner {
+    background: #1e293b !important;
+    border: 1px solid #334155 !important;
+    color: #e2e8f0 !important;
+}
+
+/* Sidebar Services */
+.service-item {
+    background: #1e293b !important;
+    border-bottom: 1px solid #334155;
+}
+
+/* Floating Cards */
+.floating-card {
+    background: rgba(30, 41, 59, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid #334155;
+    color: #fff;
+}
+
+/* Buttons Primary */
+.btn-primary,
+.primary-cta,
+.main-cta,
+.search-btn {
+    background: linear-gradient(135deg, #3b82f6, #6366f1) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-primary:hover,
+.primary-cta:hover {
+    box-shadow: 0 0 20px #3b82f6;
+}
+
+/* Outline Buttons */
+.btn-outline,
+.btn-secondary,
+.highlight-cta,
+.service-link {
+    border: 1px solid #475569 !important;
+    color: #cbd5e1 !important;
+}
+
+.btn-outline:hover,
+.btn-secondary:hover {
+    background: #334155 !important;
+}
+
+/* Doctor Cards */
+.doctor-profile {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.doctor-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Input Fields */
+input,
+select {
+    background: #1e293b !important;
+    border: 1px solid #334155 !important;
+    color: #fff !important;
+}
+
+input:focus,
+select:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 10px rgba(59,130,246,0.4);
+}
+
+/* Icons */
+.bi {
+    color: #60a5fa;
+}
+
+/* Emergency Button */
+.emergency-btn,
+.emergency-call {
+    background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+    color: white !important;
+}
+
+.emergency-btn:hover {
+    box-shadow: 0 0 20px #ef4444;
+}
+
+/* Scroll Top Button */
+.scroll-top {
+    background: #1e293b !important;
+    color: #60a5fa !important;
+}
+
+</style>
     <main class="main">
 
         <!-- Hero Section -->

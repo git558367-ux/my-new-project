@@ -1,3 +1,60 @@
+<style>
+
+/* ================= FOOTER DARK ================= */
+
+footer {
+    background: #0b1120 !important;
+    color: #cbd5e1;
+    border-top: 1px solid #1e293b;
+    padding-top: 40px;
+}
+
+/* Footer Headings */
+footer h4,
+footer h5 {
+    color: #f8fafc;
+}
+
+/* Footer Links */
+footer a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #60a5fa;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid #1e293b;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* Social Icons */
+.footer-social a {
+    display: inline-block;
+    background: #1e293b;
+    color: #60a5fa;
+    padding: 8px 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: 0.3s;
+}
+div{
+  color: #fff ;
+}
+
+.footer-social a:hover {
+    background: #3b82f6;
+    color: #fff;
+}
+
+</style>
 <footer id="footer" class="footer-16 footer position-relative">
 
     <div class="container">
