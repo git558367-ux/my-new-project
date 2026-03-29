@@ -39,11 +39,35 @@
          color: #cbd5e1 !important;
      }
 
+<<<<<<< HEAD
      .navmenu ul li ul li a:hover {
          background: #334155;
          color: #ffffff !important;
      }
  </style>
+=======
+.dropdown-item {
+    color: #cbd5e1 !important;
+}
+
+.dropdown-item:hover {
+    background: #334155 !important;
+    color: #fff !important;
+}
+
+/* Navbar Toggle (Mobile) */
+.navbar-toggler {
+    border: 1px solid #334155;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+
+</style>
+>>>>>>> 1324548b355a2047cc5dbe4a592c7cce3df1f44c
  <header id="header" class="header fixed-top">
 
      <div class="branding d-flex align-items-cente">
