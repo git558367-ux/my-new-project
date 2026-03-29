@@ -109,7 +109,10 @@
     box-shadow: 0 15px 40px rgba(0,0,0,0.6);
     color: #fff;
 }
-
+h2{
+    color: #fff
+    
+}
 .register-header p {
     font-size: 14px;
     opacity: 0.7;

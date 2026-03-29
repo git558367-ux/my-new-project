@@ -76,6 +76,7 @@
 
 .login-header h2 {
     font-weight: 700;
+    color: #fff
 }
 
 .login-header p {

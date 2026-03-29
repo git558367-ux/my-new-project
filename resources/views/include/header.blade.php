@@ -1,152 +1,103 @@
  <style>
+     /* ================= HEADER DARK ================= */
 
-/* ================= HEADER DARK ================= */
+     /* Header Background */
+     #header {
+         background: #0f172a !important;
+         border-bottom: 1px solid #1e293b;
+     }
 
-/* Navbar Background */
-header,
-.navbar,
-.main-header {
-    background: #0f172a !important;
-    border-bottom: 1px solid #1e293b;
-}
+     /* Logo */
+     #header .sitename {
+         color: #f8fafc !important;
+     }
 
-/* Logo Text */
-.navbar-brand {
-    color: #f8fafc !important;
-    font-weight: 700;
-}
+     /* Nav Links */
+     .navmenu ul li a {
+         color: #cbd5e1 !important;
+         font-weight: 500;
+         transition: 0.3s;
+     }
 
-/* Nav Links */
-.navbar-nav .nav-link {
-    color: #cbd5e1 !important;
-    font-weight: 500;
-    transition: 0.3s;
-}
+     /* Hover */
+     .navmenu ul li a:hover {
+         color: #60a5fa !important;
+     }
 
-/* Hover Effect */
-.navbar-nav .nav-link:hover {
-    color: #60a5fa !important;
-}
+     /* Active Link */
+     .navmenu ul li a.active {
+         color: #3b82f6 !important;
+     }
 
-/* Active Link */
-.navbar-nav .nav-link.active {
-    color: #3b82f6 !important;
-}
+     /* Dropdown */
+     .navmenu ul li ul {
+         background: #1e293b !important;
+     }
 
-/* Dropdown Menu */
-.dropdown-menu {
-    background: #1e293b !important;
-    border: 1px solid #334155;
-}
+     /* Dropdown Links */
+     .navmenu ul li ul li a {
+         color: #cbd5e1 !important;
+     }
 
-.dropdown-item {
-    color: #cbd5e1 !important;
-}
-
-.dropdown-item:hover {
-    background: #334155 !important;
-    color: #fff !important;
-}
-
-/* Navbar Toggle (Mobile) */
-.navbar-toggler {
-    border: 1px solid #334155;
-}
-
-.navbar-toggler-icon {
-    filter: invert(1);
-}
-
-</style>
+     .navmenu ul li ul li a:hover {
+         background: #334155;
+         color: #ffffff !important;
+     }
+ </style>
  <header id="header" class="header fixed-top">
 
-      <div class="branding d-flex align-items-cente">
+     <div class="branding d-flex align-items-cente">
 
-          <div class="container position-relative d-flex align-items-center justify-content-between">
-              <a href="index-2.html" class="logo d-flex align-items-center">
-                  <!-- Uncomment the line below if you also wish to use an image logo -->
-                  <!-- <img src="frontend/assets/img/logo.webp" alt=""> -->
-                  <h1 class="sitename">Clinic</h1>
-              </a>
+         <div class="container position-relative d-flex align-items-center justify-content-between">
+             <a href="{{route('home')}}" class="logo d-flex align-items-center">
+                 <!-- Uncomment the line below if you also wish to use an image logo -->
+                 <!-- <img src="frontend/assets/img/logo.webp" alt=""> -->
+                 <h1 class="sitename">Clinic</h1>
+             </a>
 
-              <nav id="navmenu" class="navmenu">
-                  <ul>
-                      <li><a href="index-2.html" class="active">Home</a></li>
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="departments.html">Departments</a></li>
-                      <li><a href="services.html">Services</a></li>
-                      <li><a href="doctors.html">Doctors</a></li>
-                      <li class="dropdown"><a href="#"><span>More Pages</span> <i
-                                  class="bi bi-chevron-down toggle-dropdown"></i></a>
-                          <ul>
-                              <li><a href="department-details.html">Department Details</a></li>
-                              <li><a href="service-details.html">Service Details</a></li>
-                              <li><a href="appointment.html">Appointment</a></li>
-                              <li><a href="testimonials.html">Testimonials</a></li>
-                              <li><a href="faq.html">Frequently Asked Questions</a></li>
-                              <li><a href="gallery.html">Gallery</a></li>
-                              <li><a href="terms.html">Terms</a></li>
-                              <li><a href="privacy.html">Privacy</a></li>
-                              <li><a href="404.html">404</a></li>
-                          </ul>
-                      </li>
-                      <li class="dropdown"><a href="#"><span>Dropdown</span> <i
-                                  class="bi bi-chevron-down toggle-dropdown"></i></a>
-                          <ul>
-                              <li><a href="#">Dropdown 1</a></li>
-                              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                          class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                  <ul>
-                                      <li><a href="#">Deep Dropdown 1</a></li>
-                                      <li><a href="#">Deep Dropdown 2</a></li>
-                                      <li><a href="#">Deep Dropdown 3</a></li>
-                                      <li><a href="#">Deep Dropdown 4</a></li>
-                                      <li><a href="#">Deep Dropdown 5</a></li>
-                                  </ul>
-                              </li>
-                              <li><a href="#">Dropdown 2</a></li>
-                              <li><a href="#">Dropdown 3</a></li>
-                              <li><a href="#">Dropdown 4</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="contact.html">Contact</a></li>
-                      @auth
-                          <li class="dropdown">
-                              <a href="#">
-                                  {{ auth()->user()->name }}
-                                  <i class="bi bi-chevron-down toggle-dropdown"></i>
-                              </a>
-                              <ul>
-                                  <li>
-                                      <a href="{{ route('dashboard') }}">Dashboard</a>
-                                  </li>
+             <nav id="navmenu" class="navmenu">
+                 <ul>
+                     <li><a href="{{ route('home') }}" class="active">Home</a></li>
+                     <li><a href="{{ route('about') }}">About</a></li>
+                     <li><a href="{{ route('products.index') }}">Products</a></li>
+                     <li><a href="{{route('contact')}}">Contact</a></li>
+                     @auth
+                         <li class="dropdown">
+                             <a href="#">
+                                 {{ auth()->user()->name }}
+                                 <i class="bi bi-chevron-down toggle-dropdown"></i>
+                             </a>
+                             <ul>
+                                 <li>
+                                     <a href="{{ route('dashboard') }}">Dashboard</a>
+                                 </li>
 
-                                  <li>
-                                      <a href="{{ route('profile.edit') }}">My Profile</a>
-                                  </li>
+                                 <li>
+                                     <a href="{{ route('profile.edit') }}">My Profile</a>
+                                 </li>
 
-                                  <li>
-                                      <form method="POST" action="{{ route('logout') }}">
-                                          @csrf
-                                          <button type="submit"
-                                              style="background:none;border:none;padding:8px 15px;width:100%;text-align:left;">
-                                              Logout
-                                          </button>
-                                      </form>
-                                  </li>
-                              </ul>
-                          </li>
-                      @else
-                          <li><a href="{{ route('login') }}">Login</a></li>
-                          <li><a href="{{ route('register') }}">Register</a></li>
-                      @endauth
-                  </ul>
+                                 <li>
+                                     <form method="POST" action="{{ route('logout') }}">
+                                         @csrf
+                                         <button type="submit"
+                                             style="background:none;border:none;padding:8px 15px;width:100%;text-align:left;">
+                                             Logout
+                                         </button>
+                                     </form>
+                                 </li>
+                             </ul>
+                         </li>
+                     @else
+                         <li><a href="{{ route('login') }}">Login</a></li>
+                         <li><a href="{{ route('register') }}">Register</a></li>
+                     @endauth
+                 </ul>
 
-                  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-              </nav>
+                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+             </nav>
 
-          </div>
+         </div>
 
-      </div>
+     </div>
 
-  </header>
+ </header>
